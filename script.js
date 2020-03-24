@@ -1,6 +1,3 @@
-// Client ID 3cb085ba1a68cef8af82
-// Client Secret d983c945203884606985fc1a3c38c20e39b5b317
-
 $(document).ready(function(){
     $('#searchUser').on('keyup',function(e){
         let username = e.target.value;
