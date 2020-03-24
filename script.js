@@ -15,8 +15,8 @@ $(document).ready(function(){
             data:{
                 client_id: '3cb085ba1a68cef8af82',
                 client_secret: 'd983c945203884606985fc1a3c38c20e39b5b317',
-                sort: 'created: asc',
-                per_page: 8
+                sort: 'created: asc'
+                // per_page: 8
             }
             }).done(function(repos){
                 $.each(repos, function(index, repo){
@@ -51,11 +51,12 @@ $(document).ready(function(){
                                 <a target="_blank" class="btn btn-primary btn-block mt-2" href="${user.html_url}">View Profile</a>
                             </div>
                             <div class="col-md-9">
-                                <span class="new badge #ffab91 deep-orange lighten-3">Followers: ${user.followers}</span>
-                                <span class="new badge #80cbc4 teal lighten-3">Following: ${user.following}</span>  
-                                <span class="new badge #4fc3f7 light-blue lighten-2">Public Gists: ${user.public_gists}</span>
+                                <div class="row justify-content-center mt-2 mb-2">
                                 <span class="new badge #9fa8da indigo lighten-3">Public Repos: ${user.public_repos}</span>
-                                <br><br>
+                                <span class="new badge #4fc3f7 light-blue lighten-2">Public Gists: ${user.public_gists}</span>
+                                <span class="new badge #ffab91 deep-orange lighten-3">Followers: ${user.followers}</span>
+                                <span class="new badge #80cbc4 teal lighten-3">Following: ${user.following}</span> 
+                                </div>
 
                                 <ul class="list-group">
                                     <li class="list-group-item">Compnay: ${user.company}</li>
