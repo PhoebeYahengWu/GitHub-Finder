@@ -48,7 +48,7 @@ $(document).ready(function(){
                         <div class="row">
                             <div class="col-md-3">
                                 <img style="width:100%" class="thumbnail" src="${user.avatar_url}">
-                                <a target="_blank" class="btn btn-primary btn-block mt-2" href="${user.html_url}">View Profile</a>
+                                <a target="_blank" class="btn waves-effect btn-primary btn-block mt-2" href="${user.html_url}">View Profile</a>
                             </div>
                             <div class="col-md-9">
                                 <div class="row justify-content-center mt-2 mb-2">
