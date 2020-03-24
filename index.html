@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <title>GitHub Finder</title>
 </head>
 <body>
@@ -12,16 +13,20 @@
         <div class="nav-wrapper">
           <form>
             <div class="input-field">
-              <input id="search" type="search" required placeholder="Search GitHub User">
+              <input id="searchUser" type="search" required placeholder="Search GitHub Username" autocomplete="off">
               <label class="label-icon" for="search"><i class="material-icons">search</i></label>
               <i class="material-icons">close</i>
             </div>
           </form>
         </div>
       </nav>
-    
 
+  
+      <div id="profile"></div>
+    
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script> 
             
 </body>
 </html>
