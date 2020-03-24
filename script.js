@@ -19,12 +19,13 @@ $(document).ready(function(){
                 client_id: '3cb085ba1a68cef8af82',
                 client_secret: 'd983c945203884606985fc1a3c38c20e39b5b317',
                 sort: 'created: asc',
-                per_page: 5
+                per_page: 8
             }
             }).done(function(repos){
                 $.each(repos, function(index, repo){
+                    $('#repos').html = " ";
                     $('#repos').append(`
-                            <div class="row">
+                        <div class="row">
                             <div class="col s12"> 
                                 <div class="card">
                                     <div class="card-content">
@@ -34,7 +35,7 @@ $(document).ready(function(){
                                     </div>  
                                 </div>
                             </div>
-                            </div>
+                        </div>
                     `)
                 })
             });
