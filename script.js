@@ -25,12 +25,12 @@ $(document).ready(function(){
                 $.each(repos, function(index, repo){
                     $('#repos').append(`
                             <div class="row">
-                            <div class="col s12">
+                            <div class="col s12"> 
                                 <div class="card">
                                     <div class="card-content">
                                         <strong>${repo.name}</strong><br>
-                                        <p>Repo Description: ${repo.description}</p>
-                                        <a href="${repo.html_url}" target="_blank" class="btn btn-primary btn-block">Repo Page</a>
+                                        <p>Description: ${repo.description}</p>
+                                        <a href="${repo.html_url}" target="_blank">${repo.html_url}</a> 
                                     </div>  
                                 </div>
                             </div>
@@ -76,14 +76,14 @@ $(document).ready(function(){
 
                 <div class="container-fluid">
                 <div class="card mt-3">
-                    <div class="card-header pb-0 mb-0">
+                    <div class="card-header">
                         <h3 class="card-title">Latest Repos</h3> 
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body mb-0 pb-0">
 
-                        <div class="row">
-                            <div id="repos" class="col s12"></div> 
+                        <div class="row mb-0 pb-0">
+                            <div id="repos" class="col s12 mb-0 pb-0"></div> 
                         </div>
 
                     <div>
