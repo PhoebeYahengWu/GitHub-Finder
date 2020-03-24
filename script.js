@@ -52,12 +52,10 @@ $(document).ready(function(){
                             </div>
                             <div class="col-md-9">
                                 <div class="row justify-content-center mt-2 mb-2">
-                                <span class="new badge #9fa8da indigo lighten-3">Public Repos: ${user.public_repos}</span>
-                                <span class="new badge #4fc3f7 light-blue lighten-2">Public Gists: ${user.public_gists}</span>
-                                <span class="new badge #ffab91 deep-orange lighten-3">Followers: ${user.followers}</span>
-                                <span class="new badge #80cbc4 teal lighten-3">Following: ${user.following}</span> 
+                                <span class="badge #4db6ac teal lighten-2 white-text">Public Repos: ${user.public_repos}</span>
+                                <span class="badge #4db6ac teal lighten-2 white-text">Followers: ${user.followers}</span>
+                                <span class="badge #4db6ac teal lighten-2 white-text">Following: ${user.following}</span> 
                                 </div>
-
                                 <ul class="list-group">
                                     <li class="list-group-item">Compnay: ${user.company}</li>
                                     <li class="list-group-item">Website/Blog: ${user.blog}</li>
