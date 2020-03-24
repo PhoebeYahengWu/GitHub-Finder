@@ -43,7 +43,7 @@ $(document).ready(function(){
                         <h3 class="card-title">${user.name}</h3>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body pb-0 mb-0">
 
                         <div class="row">
                             <div class="col-md-3">
